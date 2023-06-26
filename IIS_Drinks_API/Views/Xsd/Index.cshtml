@@ -1,0 +1,40 @@
+﻿@model IEnumerable<IIS_Drinks_API.Models.Drink>
+
+@{
+    ViewBag.Title = "Index";
+}
+<h2>XSD Validator</h2>
+@using (Html.BeginForm("Index", "Xsd", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div>
+        @Html.TextBox("file", "", new { type = "file" }) <br />
+        <input type="submit" value="Upload" />
+        @ViewBag.Message
+    </div>
+    if (Model != null)
+    {
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>do something</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Description</td>
+            <td>
+
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+    }
+
+</table>}
+}

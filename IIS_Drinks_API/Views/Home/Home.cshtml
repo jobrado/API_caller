@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+}
+
+<h2>Choose your option:</h2>
+
+@Html.ActionLink("GET XSD", "Index", "Xsd", "", new { @class = "btn-primary primary" })
+<hr />
+@Html.ActionLink("GET RNG", "Index", "Rng", "", new { @class = "btn-primary primary" })
+<hr />
+@Html.ActionLink("GET DHMZ", "Index", "Dhmz", "", new { @class = "btn-primary primary" });
+<hr />
+@Html.ActionLink("GET API", "Index", "Api","", new { @class = "btn-primary primary" });
+

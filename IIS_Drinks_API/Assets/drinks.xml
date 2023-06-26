@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<drinks>
+  <drink>
+    <id>absinthe</id>
+    <name>Absinthe</name>
+    <description>Absinthe is an anise-flavored spirit derived from several plants, including the flowers and leaves of Artemisia absinthium, together with green anise, sweet fennel, and other medicinal and culinary herbs. Historically described as a highly alcoholic spirit, it is 45-74% ABV or 90-148 proof.</description>
+  </drink>
+  <drink>
+    <id>bourbon</id>
+    <name>Bourbon</name>
+    <description>Bourbon is a type of American whiskey, a barrel-aged distilled liquor made primarily from corn. The name derives from the French Bourbon dynasty, although the precise inspiration is uncertain; contenders include Bourbon County in Kentucky and Bourbon Street in New Orleans, both of which are named after the dynasty.</description>
+  </drink>
+  <drink>
+    <id>brandy</id>
+    <name>Brandy and Cognac</name>
+    <description>Brandy is a liquor produced by distilling wine. Brandy generally contains 35-60% alcohol by volume or 70-120 proof. Fruit brandy is a distilled beverage produced from mash, juice, wine or residues of edible fruits. The term covers a broad class of spirits produced across the world, and typically excludes beverages made from grapes, which are referred to as plain brandy. Apples, pears, apricots, plums and cherries are the most commonly used fruits.</description>
+  </drink>
+  <drink>
+    <id>cachaca</id>
+    <name>Cachaça</name>
+    <description>Cachaça is a distilled spirit from made with fermented sugarcane juice. Also known as pinga, caninha, and other names, it is the most popular spirit among distilled alcoholic beverages in Brazil.</description>
+  </drink>
+  <drink>
+    <id>gin</id>
+    <name>Gin</name>
+    <description>Gin is a distilled alcoholic drink that derives its predominant flavor from juniper berries.</description>
+  </drink>
+  <drink>
+    <id>irish</id>
+    <name>Irish Whiskey</name>
+    <description>Irish whiskey is whiskey made on the island of Ireland. The word &#x27;whiskey&#x27; (or whisky) comes from the Irish uisce beatha, meaning water of life.</description>
+  </drink>
+  <drink>
+    <id>liqueur</id>
+    <name>Liqueur</name>
+    <description>A liqueur is an alcoholic drink composed of spirits and additional flavorings such as sugar, fruits, herbs, and spices. Often served with or after dessert.</description>
+  </drink>
+  <drink>
+    <id>none</id>
+    <name>Nonalcoholic</name>
+    <description>Nonalcoholic Drinks and Cocktails.</description>
+  </drink>
+  <drink>
+    <id>other</id>
+    <name>Other Spirits and Ingredients</name>
+    <description>Other Spirits and Ingredients such as beer, wine and sake.</description>
+  </drink>
+  <drink>
+    <id>whiskey</id>
+    <name>Other Whiskeys</name>
+    <description>Other Whiskey Cocktails.</description>
+  </drink>
+  <drink>
+    <id>rum</id>
+    <name>Rum</name>
+    <description>Rum is a liquor made by fermenting and then distilling sugarcane molasses or sugarcane juice. The distillate, a clear liquid, is usually aged in oak barrels.</description>
+  </drink>
+  <drink>
+    <id>rye</id>
+    <name>Rye Whiskey</name>
+    <description>American rye whiskey, which is similar to bourbon whiskey, but must be distilled from at least 51 percent rye grain.</description>
+  </drink>
+  <drink>
+    <id>scotch</id>
+    <name>Scotch Whisky</name>
+    <description>Scotch whisky is malt whisky or grain whisky, made in Scotland. All Scotch whisky was originally made from malted barley. Commercial distilleries began introducing whisky made from wheat and rye in the late 18th century. As of 2020, there were 134 Scotch whisky distilleries operating in Scotland.</description>
+  </drink>
+  <drink>
+    <id>tequila</id>
+    <name>Tequila &amp; Mezcal</name>
+    <description>Tequila is a distilled beverage made from the blue agave plant.</description>
+  </drink>
+  <drink>
+    <id>vermouth</id>
+    <name>Vermouth</name>
+    <description>Vermouth is an aromatized fortified wine, flavoured with various botanicals (roots, barks, flowers, seeds, herbs, and spices) and sometimes colored. The modern versions of the beverage were first produced in the mid- to late 18th century in Turin, Italy.</description>
+  </drink>
+  <drink>
+    <id>vodka</id>
+    <name>Vodka</name>
+    <description>Vodka is a clear distilled alcoholic beverage originated in Poland, Russia, and Sweden. Vodka is composed mainly of water and ethanol but sometimes with traces of impurities and flavourings. Traditionally, it is made by distilling liquid from fermented cereal grains. Potatoes have been used in more recent times, and some modern brands use fruits, honey, or maple sap as the base.</description>
+  </drink>
+</drinks>

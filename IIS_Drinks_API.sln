@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IIS_Drinks_API", "IIS_Drinks_API\IIS_Drinks_API.csproj", "{C5F178C1-5E00-4A20-8BF5-B8D0C0D06A66}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CC9F109B-CC92-4EE2-B54D-FAEC718E64BC} = {CC9F109B-CC92-4EE2-B54D-FAEC718E64BC}
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SOAP_Service", "SOAP_Service\", "{CC9F109B-CC92-4EE2-B54D-FAEC718E64BC}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		ProjectReferences = "{c5f178c1-5e00-4a20-8bf5-b8d0c0d06a66}|IIS_Drinks_API.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50817"
+		Debug.AspNetCompiler.PhysicalPath = "SOAP_Service\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50817\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50817"
+		Release.AspNetCompiler.PhysicalPath = "SOAP_Service\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50817\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50817"
+		SlnRelativePath = "SOAP_Service\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5F178C1-5E00-4A20-8BF5-B8D0C0D06A66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5F178C1-5E00-4A20-8BF5-B8D0C0D06A66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5F178C1-5E00-4A20-8BF5-B8D0C0D06A66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5F178C1-5E00-4A20-8BF5-B8D0C0D06A66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC9F109B-CC92-4EE2-B54D-FAEC718E64BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC9F109B-CC92-4EE2-B54D-FAEC718E64BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC9F109B-CC92-4EE2-B54D-FAEC718E64BC}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC9F109B-CC92-4EE2-B54D-FAEC718E64BC}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81A6DA6D-AD2C-4EC2-9D5B-6D10D9D30565}
+	EndGlobalSection
+EndGlobal

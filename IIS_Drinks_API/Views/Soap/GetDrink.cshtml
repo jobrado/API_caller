@@ -1,0 +1,46 @@
+﻿@model IIS_Drinks_API.soapservice.Drink
+
+@{
+    ViewBag.Title = "GetDrink";
+    var drink = ViewBag.Drink;
+}
+
+<h2>GetDrink</h2>
+@using (Html.BeginForm()) { 
+   <div>
+
+        <h4>Drink</h4>
+        <hr />
+        <label>Type in drink name:</label>
+        @Html.TextBoxFor(model => model.Id))
+        @Html.ValidationMessageFor(model => model.Id, "", new { @class = "text-danger" })
+        @if (drink != null)
+        {
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Name)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Description)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Description)
+                </dd>
+
+            </dl>
+        }
+    </div>
+<p>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Get drink" class="btn btn-primary mt-3" />
+        </div>
+    </div>
+</p>
+}

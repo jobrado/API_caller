@@ -1,0 +1,20 @@
+<element name="drinks" xmlns="http://relaxng.org/ns/structure/1.0"
+datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+<zeroOrMore>
+
+<element name="drink">
+
+<element name="id">
+              <text/>
+</element>
+
+<element name="name">
+<text/>
+</element>
+<element name="description">
+<text/>
+</element>
+</element>
+
+</zeroOrMore>
+</element>

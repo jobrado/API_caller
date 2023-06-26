@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="soapservice" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="soapservice" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="soapservice">
+      <s:element name="GetDrink">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="val" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDrinkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDrinkResult" type="tns:Drink" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Drink">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetDrinkSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDrink" />
+  </wsdl:message>
+  <wsdl:message name="GetDrinkSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDrinkResponse" />
+  </wsdl:message>
+  <wsdl:portType name="GetDataSoap">
+    <wsdl:operation name="GetDrink">
+      <wsdl:input message="tns:GetDrinkSoapIn" />
+      <wsdl:output message="tns:GetDrinkSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GetDataSoap" type="tns:GetDataSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDrink">
+      <soap:operation soapAction="soapservice/GetDrink" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GetDataSoap12" type="tns:GetDataSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDrink">
+      <soap12:operation soapAction="soapservice/GetDrink" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GetData">
+    <wsdl:port name="GetDataSoap" binding="tns:GetDataSoap">
+      <soap:address location="http://localhost:50817/GetData.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GetDataSoap12" binding="tns:GetDataSoap12">
+      <soap12:address location="http://localhost:50817/GetData.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
